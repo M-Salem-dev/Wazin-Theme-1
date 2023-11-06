@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="description"
+      content="A website that sells all products, such as washing machines, refrigerators, computer screens, and mobile phones"
+    />
+    <meta name="keywords" content="ecommerce, shopping" />
+    <meta name="author" content="Wazin" />
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wazin</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="icon" href="images/test/hover-image-01.webp" type="" />
+
+    <!-- ===================================================================================================== -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- ===================================================================================================== -->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- ===================================================================================================== -->
+
+    <!-- slick -->
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+
+    <!-- ===================================================================================================== -->
+    <!-- style css en & ar -->
+
+    <!-- the compressed, production -->
+    <link rel="stylesheet" href="css/style-en.css" />
+    <!-- <link rel="stylesheet" href="css/style-ar.css" /> -->
+
+    <!-- the uncompressed, development -->
+    <!-- <link rel="stylesheet" href="css/style-en.min.css" /> -->
+    <!-- <link rel="stylesheet" href="css/style-ar.min.css" /> -->
+    <!-- ===================================================================================================== -->
+
+    <style>
+      :root {
+        --mainColor: #4d7388;
+        --headerTitle: #000;
+        --headerParagraph: #000;
+        --subTitleFooter: rgb(255, 255, 255);
+      }
+    </style>
+    <!-- ===================================================================================================== -->
+  </head>
+  <body>
+    <!-- ===================================================================================================== -->
+
+    <!-- spinners -->
+    <section id="loading" class="justify-content-center align-items-center">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- progress -->
+    <div id="progress">
+      <span id="progress-value" title="Scroll To Top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </span>
+    </div>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- navbar -->
+    <nav id="box-nav-fixed">
+      <!-- mobile -->
+      <div>
+        <div>
+          <div class="box-icon-nav-mobile" id="box-icon-nav-mobile">
+            <!-- -------------------------------------------------- -->
+            <!-- Personal mobile -->
+
+            <div class="item-icon-nav box-Personal-all">
+              <!-- <div class="dropdown">
+                <button
+                  class="btn btn-secondary btn-dropdown-name"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <div class="box-Personal">
+                    <div class="d-flex gap-1 align-items-center">
+                      <i class="fa-regular fa-hand-wave"></i>
+                      Hello,
+                      <div class="name-nav">Mohamed Salem efsdfsdgdg</div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <span> <i class="fa-light fa-user"></i> </span>
+                      Edit Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <span>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                      </span>
+                      Address
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <span>
+                        <i class="fa-light fa-cart-shopping-fast"></i>
+                      </span>
+
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <span> <i class="fa-duotone fa-rotate-left"></i> </span>
+
+                      Returns
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Profile.html">
+                      <span>
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                      </span>
+                      Loyalty points
+                    </a>
+                  </li>
+                  <li>
+                    <button type="" class="dropdown-item">
+                      <span>
+                        <i
+                          class="fa-duotone fa-person-walking-arrow-loop-left"
+                        ></i>
+                      </span>
+                      Log out
+                    </button>
+                  </li>
+                </ul>
+              </div> -->
+
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btn-login"
+              >
+                <i class="fa-light fa-user"></i>
+                <span> Login </span>
+              </button>
+            </div>
+            <!-- -------------------------------------------------- -->
+            <!-- search mobile-->
+            <div class="item-icon-nav box-search-nav">
+              <div class="dropdown">
+                <button
+                  class="btn btn-search btn-search-nav"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <!-- search Toggle-->
+                  <div class="mkd-form-holder box-form-nav">
+                    <form>
+                      <div class="box-input-btn-nav-search">
+                        <input
+                          type="text"
+                          placeholder="Search for products..."
+                          name="s"
+                          class="form-control input-nav-search"
+                          autocomplete="off"
+                        />
+                        <button type="submit" class="btn-search-submit">
+                          <i class="fa-light fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- -------------------------------------------------- -->
+            <!-- heart mobile-->
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbarHeart"
+              aria-controls="offcanvasNavbarHeart"
+              aria-label="Toggle navigation"
+              class="item-icon-nav box-cart"
+            >
+              <i class="fa-light fa-heart"></i>
+              <span class="number-heart"></span>
+            </button>
+
+            <!-- -------------------------------------------------- -->
+            <!-- cart mobile -->
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+              class="item-icon-nav box-cart btn-cart-nav"
+            >
+              <i class="fa-light fa-cart-shopping"></i>
+              <span class="number-cart"></span>
+            </button>
+
+            <!-- -------------------------------------------------- -->
+
+            <!-- -------------------------------------------------- -->
+            <!-- language mobile-->
+            <div class="item-icon-nav language-nav">
+              <ul class="">
+                <li>
+                  <a class="dropdown-item" href="/">
+                    <div>
+                      <img src="images/language/Arab.png" alt="" />
+                    </div>
+                    <span class="css-wuhtur">عربي </span>
+                  </a>
+                </li>
+
+                <!-- <li>
+                  <a
+                    class="dropdown-item"
+                    href="/"
+                  >
+                    <div>
+                      <img src="images/language/English.png" alt="" />
+                    </div>
+                    <span class="css-wuhtur">English</span>
+                  </a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-nav-all">
+        <div class="container">
+          <div class="box-nav">
+            <div class="d-flex align-items-center">
+              <div>
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                  <div class="text-center logo-nav py-2">
+                    <img
+                      src="https://shofy-nuxt.vercel.app/img/logo/logo.svg"
+                      alt=""
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- link page -->
+            <div>
+              <div class="box-cilsh-nav">
+                <a href="index.html" class="item-nav Link-nav active-nav"
+                  >Home
+                  <span data-v-1ca82a91="" class="span-bored"></span>
+                </a>
+                <a href="#About-Us" class="item-nav Link-nav"
+                  >About Us
+                  <span data-v-1ca82a91="" class="span-bored"></span>
+                </a>
+
+                <a href="All-Products.html" class="item-nav Link-nav"
+                  >All Products
+                  <span data-v-1ca82a91="" class="span-bored"></span>
+                </a>
+                <div class="item-na Link-na box-Categories-Nav">
+                  All Categories
+                  <span class="arrow-Categories">
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </span>
+                  <span data-v-1ca82a91="" class="span-bored"></span>
+
+                  <div class="box-all-menu-dropdown">
+                    <div class="box-item-dropdown2">
+                      <div class="row box-2-dropdown">
+                        <div class="col-3 box-Link-Categories">
+                          <ul class="ul-Categories">
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-female"></i
+                                  ></span>
+                                  Women's Clothing
+                                </div>
+                              </div>
+
+                              <div class="sub-menu-dropdown">
+                                <div class="row box-sub-sub-dropdown-mo">
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">OUTWEAR & SWEATERS</a></h3>
+                                      <ul class="">
+                                        <li><a href="/">Blazers</a></li>
+                                        <li>
+                                          <a href="/">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li><a href="/">Trench</a></li>
+                                        <li><a href="/">Cardigans</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">BOTTOMS</a></h3>
+                                      <ul class="">
+                                        <li class=""><a href="/">Skirts</a></li>
+                                        <li><a href="/">Shorts</a></li>
+                                        <li><a href="/">Jeans</a></li>
+                                        <li><a href="/">Pants & Capris</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">ACCESSORIES</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">OUTWEAR & SWEATERS</a>
+                                        </li>
+                                        <li><a href="/">Headwear</a></li>
+                                        <li><a href="/">Baseball Caps</a></li>
+                                        <li><a href="/">Sunglasses</a></li>
+                                        <li><a href="/">Belts</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">HOT SEARCH</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">Panties</a>
+                                        </li>
+                                        <li><a href="/">Bras</a></li>
+                                        <li><a href="/">Shapers</a></li>
+                                        <li>
+                                          <a href="/">Bra & Brief Sets</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">HOT CATEGORIES</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">Dresses</a>
+                                        </li>
+                                        <li>
+                                          <a href="/">Blouses & Shirts</a>
+                                        </li>
+                                        <li><a href="/">T-Shirts</a></li>
+                                        <li><a href="/">Tank Tops</a></li>
+                                        <li>
+                                          <a href="/">Jumpsuits & Rompers</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-male"></i
+                                  ></span>
+                                  Men's Clothing
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa-solid fa-clock"></i
+                                  ></span>
+                                  WATCHES
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-briefcase"></i
+                                  ></span>
+                                  BAGS & SHOES
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-shopping-cart"></i
+                                  ></span>
+                                  SHOES
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa-solid fa-gem"></i
+                                  ></span>
+                                  JEWELLERY
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-star"></i
+                                  ></span>
+                                  ACCESSORIES
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-child"></i
+                                  ></span>
+                                  TOYS, KIDS & BABY
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa-solid fa-volleyball"></i
+                                  ></span>
+                                  SPORTS & OUTDOORS
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item">
+                              <div class="sho-arrow Link-item-Categories">
+                                <div class="">
+                                  <span class="icon-item-Categories"
+                                    ><i class="fa fa-anchor"></i
+                                  ></span>
+                                  HEALTH & BEAUTY
+                                </div>
+                              </div>
+
+                              <div class="sub-menu-dropdown">
+                                <div class="row box-sub-sub-dropdown-mo">
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">OUTWEAR & SWEATERS</a></h3>
+                                      <ul class="">
+                                        <li><a href="/">Blazers</a></li>
+                                        <li>
+                                          <a href="/">Hoodies & Sweatshirts</a>
+                                        </li>
+                                        <li><a href="/">Trench</a></li>
+                                        <li><a href="/">Cardigans</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">BOTTOMS</a></h3>
+                                      <ul class="">
+                                        <li class=""><a href="/">Skirts</a></li>
+                                        <li><a href="/">Shorts</a></li>
+                                        <li><a href="/">Jeans</a></li>
+                                        <li><a href="/">Pants & Capris</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">ACCESSORIES</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">OUTWEAR & SWEATERS</a>
+                                        </li>
+                                        <li><a href="/">Headwear</a></li>
+                                        <li><a href="/">Baseball Caps</a></li>
+                                        <li><a href="/">Sunglasses</a></li>
+                                        <li><a href="/">Belts</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">HOT SEARCH</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">Panties</a>
+                                        </li>
+                                        <li><a href="/">Bras</a></li>
+                                        <li><a href="/">Shapers</a></li>
+                                        <li>
+                                          <a href="/">Bra & Brief Sets</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-3 my-2">
+                                    <div class="box-item-sub">
+                                      <h3><a href="">HOT CATEGORIES</a></h3>
+                                      <ul class="">
+                                        <li class="">
+                                          <a href="/">Dresses</a>
+                                        </li>
+                                        <li>
+                                          <a href="/">Blouses & Shirts</a>
+                                        </li>
+                                        <li><a href="/">T-Shirts</a></li>
+                                        <li><a href="/">Tank Tops</a></li>
+                                        <li>
+                                          <a href="/">Jumpsuits & Rompers</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div
+                          class="col-9 d-flex align-items-center box-img-offers-Categories-mo"
+                        >
+                          <div class="row align-items-center">
+                            <div class="col-2">
+                              <!-- <a href="/" class="box-img-Categories">
+                                <img src="images/test/hader-2.png" alt="" />
+                              </a> -->
+                            </div>
+                            <div class="col-6">
+                              <div class="row">
+                                <div class="col-12 my-2">
+                                  <a href="/" class="box-img-Categories-2">
+                                    <img
+                                      src="images/test/3-Categories.jpg"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                                <div class="col-12 my-2">
+                                  <a href="/" class="box-img-Categories-2">
+                                    <img
+                                      src="images/test/2-Categories.jpg"
+                                      alt=""
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-4">
+                              <a href="/" class="box-img-Categories-1">
+                                <img
+                                  src="images/test/1-Categories.jpg"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="Connect-us.html" class="item-nav Link-nav"
+                  >Contact Us
+                  <span data-v-1ca82a91="" class="span-bored"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <!-- -------------------------------------------------- -->
+              <!-- pc -->
+              <div>
+                <div class="box-icon-nav-pc">
+                  <!-- -------------------------------------------------- -->
+                  <!-- search-nav -->
+                  <div class="item-icon-nav box-search-nav">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-search btn-search-nav"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                      </button>
+                      <div class="dropdown-menu">
+                        <!-- search Toggle-->
+                        <div class="mkd-form-holder box-form-nav">
+                          <form>
+                            <div class="box-input-btn-nav-search">
+                              <input
+                                type="text"
+                                placeholder="Search for products..."
+                                name="s"
+                                class="form-control input-nav-search"
+                                autocomplete="off"
+                              />
+                              <button type="submit" class="btn-search-submit">
+                                <i class="fa-light fa-arrow-right"></i>
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- -------------------------------------------------- -->
+                  <!-- cart -->
+                  <button
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"
+                    class="item-icon-nav box-cart btn-cart-nav"
+                  >
+                    <i class="fa-light fa-cart-shopping"></i>
+                    <span class="number-cart"></span>
+                  </button>
+
+                  <!-- -------------------------------------------------- -->
+                  <!-- heart -->
+                  <button
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbarHeart"
+                    aria-controls="offcanvasNavbarHeart"
+                    aria-label="Toggle navigation"
+                    class="item-icon-nav box-cart"
+                  >
+                    <i class="fa-light fa-heart"></i>
+                    <span class="number-heart"></span>
+                  </button>
+
+                  <!-- -------------------------------------------------- -->
+                  <!-- user Navbar      -->
+                  <div class="item-icon-nav box-Personal-all">
+                    <!-- <div class="dropdown">
+                      <button
+                        class="btn btn-secondary btn-dropdown-name"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <div class="box-Personal">
+                          <div class="d-flex gap-1 align-items-center">
+                            <i class="fa-regular fa-hand-wave"></i>
+                            Hello,
+                            <div class="name-nav">Mohamed Salem efsdfsdgdg</div>
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </div>
+                        </div>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="Profile.html">
+                            <span> <i class="fa-light fa-user"></i> </span>
+                            Edit Profile
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="Profile.html">
+                            <span>
+                              <i class="fa-solid fa-map-location-dot"></i>
+                            </span>
+                            Address
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="Profile.html">
+                            <span>
+                              <i class="fa-light fa-cart-shopping-fast"></i>
+                            </span>
+
+                            Orders
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="Profile.html">
+                            <span>
+                              <i class="fa-duotone fa-rotate-left"></i>
+                            </span>
+
+                            Returns
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="Profile.html">
+                            <span>
+                              <i class="fa-solid fa-circle-exclamation"></i>
+                            </span>
+                            Loyalty points
+                          </a>
+                        </li>
+                        <li>
+                          <button type="" class="dropdown-item">
+                            <span>
+                              <i
+                                class="fa-duotone fa-person-walking-arrow-loop-left"
+                              ></i>
+                            </span>
+                            Log out
+                          </button>
+                        </li>
+                      </ul>
+                    </div> -->
+
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                      class="btn btn-login"
+                    >
+                      <i class="fa-light fa-user"></i>
+                      <span> Login </span>
+                    </button>
+                  </div>
+
+                  <!-- -------------------------------------------------- -->
+                  <!-- language -->
+                  <div class="item-icon-nav language-nav">
+                    <ul class="">
+                      <li>
+                        <a class="dropdown-item" href="/">
+                          <div>
+                            <img src="images/language/Arab.png" alt="" />
+                          </div>
+                          <span class="css-wuhtur">عربي </span>
+                        </a>
+                      </li>
+
+                      <!-- <li>
+                        <a
+                          class="dropdown-item"
+                          href="/"
+                        >
+                          <div>
+                            <img src="images/language/English.png" alt="" />
+                          </div>
+                          <span class="css-wuhtur">English</span>
+                        </a>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- icon maunn -->
+              <div class="mun-align">
+                <button class="maunn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- -------------------------------------------------- -->
+
+        <!-- -------------------------------------------------- -->
+
+        <!-- -------------------------------------------------- -->
+      </div>
+    </nav>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- whatsapp -->
+    <section>
+      <div>
+        <div class="box-icon-whatsapp">
+          <a target="_blank" href="https://wa.me/201234567890">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- login  -->
+    <section>
+      <div
+        class="modal fade box-Modal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered box-Modal-SignUp">
+          <div class="modal-content">
+            <!-- Login -->
+            <div class="modal-body row" id="login">
+              <div
+                class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 box-Login-mo-pc"
+                id="main"
+                id="login"
+              >
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <form class="box-form-SignUp">
+                      <div class="form-group py-2">
+                        <label for="exampleInputphone">Phone Or E-mail</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                          placeholder="Enter phone Or email"
+                        />
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button
+                          type="button"
+                          class="btn btn-Submit my-2"
+                          id="submitBtnPhone"
+                        >
+                          Submit
+                        </button>
+
+                        <button type="reset" class="btn btn-Reset my-2">
+                          Reset
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
+                <div class="box-svg">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg
+                    width="67px"
+                    viewBox="-10 0 67 578"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>Path</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <path
+                        d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
+                        id="Path"
+                        fill="var(--mainColor)"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="column" id="secondary">
+                  <div class="sec-content">
+                    <div class="item-sec-content">
+                      <h2>Login</h2>
+                      <h3>Welcome Back!</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </p>
+                      <button
+                        type="button"
+                        class="btn btn-Close-Login"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-svg-width">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path
+                    fill-opacity="1"
+                    d="M0,0L48,48C96,96,192,192,288,202.7C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Code (initially) -->
+            <div class="modal-body row" id="code">
+              <div
+                class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 box-Login-mo-pc"
+              >
+                <div class="sec-content">
+                  <div class="box-SignUp">
+                    <form class="box-form-SignUp">
+                      <div class="form-group py-2">
+                        <label for="exampleInputphone">Enter Code</label>
+
+                        <div class="box-code">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleInputphone"
+                            aria-describedby="emailHelp"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="box-Submit-reset">
+                        <button type="submit" class="btn btn-Submit my-2">
+                          Submit
+                        </button>
+
+                        <button type="reset" class="btn btn-Reset my-2">
+                          Reset
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
+                <div class="box-svg">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg
+                    width="67px"
+                    viewBox="-10 0 67 500"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                    <title>Path</title>
+                    <desc>Created with Sketch.</desc>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <path
+                        d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
+                        id="Path"
+                        fill="var(--mainColor)"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="column" id="secondary">
+                  <div class="sec-content">
+                    <div class="item-sec-content">
+                      <h2>Code has been sent</h2>
+                      <p>Enter the code sent to you. Thank you</p>
+                      <div class="box-btn-Close-Login">
+                        <button
+                          type="button"
+                          class="btn btn-Login-page-code"
+                          id="submitBtnCode"
+                        >
+                          Login
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-Close-Login"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-svg-width">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                  <path
+                    fill-opacity="1"
+                    d="M0,0L48,48C96,96,192,192,288,202.7C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- Cart -->
+    <aside>
+      <div
+        class="offcanvas box-aside-Cart offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasNavbarLabel">
+            YOUR CART (2 ITEMS)
+          </h2>
+          <button
+            type="button"
+            class="btn-close-cart btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            close
+          </button>
+        </div>
+        <hr />
+        <div class="offcanvas-body">
+          <div
+            class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+          >
+            <div class="box-aside-cart-img-Quantity-trash">
+              <div class="box-img-aside-cart">
+                <img src="images/test/Offer-1.png" alt="" />
+              </div>
+
+              <div>
+                <form>
+                  <div class="form-cart detail-qty">
+                    <button
+                      type="button"
+                      class="btn increaseButtonNavCart btn-increase-increase"
+                    >
+                      <i class="fa-light fa-plus"></i>
+                    </button>
+                    <input
+                      class="qty-val-nav-cart form-control"
+                      type="text"
+                      name="quantity"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="btn decreaseButtonNavCart btn-increase-decrease"
+                    >
+                      <i class="fa-light fa-minus"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="box-trash">
+                <button class="btn btn-trash delete-item-cart-nav">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-1">
+              <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+              <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+              <div class="box-total-item-nav-cart">
+                <span class="total-item-nav-cart"></span>
+                <span> R.s</span>
+              </div>
+            </div>
+            <div class="border-aside-cart"></div>
+          </div>
+          <div
+            class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+          >
+            <div class="box-aside-cart-img-Quantity-trash">
+              <div class="box-img-aside-cart">
+                <img src="images/test/Offer-1.png" alt="" />
+              </div>
+
+              <div>
+                <form>
+                  <div class="form-cart detail-qty">
+                    <button
+                      type="button"
+                      class="btn increaseButtonNavCart btn-increase-increase"
+                    >
+                      <i class="fa-light fa-plus"></i>
+                    </button>
+                    <input
+                      class="qty-val-nav-cart form-control"
+                      type="text"
+                      name="quantity"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="btn decreaseButtonNavCart btn-increase-decrease"
+                    >
+                      <i class="fa-light fa-minus"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="box-trash">
+                <button class="btn btn-trash delete-item-cart-nav">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-1">
+              <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+              <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+              <div class="box-total-item-nav-cart">
+                <span class="total-item-nav-cart"></span>
+                <span> R.s</span>
+              </div>
+            </div>
+            <div class="border-aside-cart"></div>
+          </div>
+          <div
+            class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+          >
+            <div class="box-aside-cart-img-Quantity-trash">
+              <div class="box-img-aside-cart">
+                <img src="images/test/Offer-1.png" alt="" />
+              </div>
+
+              <div>
+                <form>
+                  <div class="form-cart detail-qty">
+                    <button
+                      type="button"
+                      class="btn increaseButtonNavCart btn-increase-increase"
+                    >
+                      <i class="fa-light fa-plus"></i>
+                    </button>
+                    <input
+                      class="qty-val-nav-cart form-control"
+                      type="text"
+                      name="quantity"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="btn decreaseButtonNavCart btn-increase-decrease"
+                    >
+                      <i class="fa-light fa-minus"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="box-trash">
+                <button class="btn btn-trash delete-item-cart-nav">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-1">
+              <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+              <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+              <div class="box-total-item-nav-cart">
+                <span class="total-item-nav-cart"></span>
+                <span> R.s</span>
+              </div>
+            </div>
+            <div class="border-aside-cart"></div>
+          </div>
+
+          <div class="box-Empty-cart">
+            <img src="images/Empty-cart.png" alt="" />
+            <p>Your shopping cart is empty. You can shop now 66666</p>
+            <a href="index.html">Shop now</a>
+          </div>
+        </div>
+
+        <div class="box-Only-Free-Shipping">
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          >
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 100%"
+            >
+              <span class="box-aside-cart-icon-truck"
+                ><i class="fa-solid fa-truck"></i
+              ></span>
+              nly 311.00 R.s away from Free Shipping
+            </div>
+          </div>
+        </div>
+        <div class="box-aside-Cart-TOTAL">
+          <hr />
+          <div class="box-TOTAL-aside-Cart">
+            <h3>TOTAL:</h3>
+            <div>
+              <span class="TOTAL-SUBTOTAL-Nav-Cart"></span><span>R.s</span>
+            </div>
+          </div>
+          <hr />
+
+          <div class="box-aside-Cart-link-cart-link-CheckOut">
+            <a href="cart.html" class="link-Cart"
+              ><span><i class="fa-duotone fa-cart-shopping"></i> </span> Cart</a
+            >
+            <a href="Check-Out.html" class="link-CheckOut">Check Out</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- heart -->
+    <aside>
+      <div
+        class="offcanvas box-aside-Cart offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbarHeart"
+        aria-labelledby="offcanvasNavbarHeartLabel"
+      >
+        <div class="offcanvas-header">
+          <h2 class="offcanvas-title" id="offcanvasNavbarHeartLabel">
+            YOUR Favorite (2 ITEMS)
+          </h2>
+          <button
+            type="button"
+            class="btn-close-cart btn"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            close
+          </button>
+        </div>
+        <hr />
+        <div class="offcanvas-body">
+          <div
+            class="box-aside-cart-img-Quantity-trash-border box-item-Favorites-nav"
+          >
+            <div class="box-aside-cart-img-Quantity-trash">
+              <div class="box-img-aside-cart">
+                <img src="images/test/Offer-1.png" alt="" />
+              </div>
+
+              <div>
+                <form>
+                  <div class="form-cart detail-qty">
+                    <button
+                      type="button"
+                      class="btn increaseButtonNavCart btn-increase-increase"
+                    >
+                      <i class="fa-light fa-plus"></i>
+                    </button>
+                    <input
+                      class="qty-val-nav-Favorites form-control"
+                      type="text"
+                      name="quantity"
+                      value="1"
+                      min="1"
+                    />
+                    <button
+                      type="button"
+                      class="btn decreaseButtonNavCart btn-increase-decrease"
+                    >
+                      <i class="fa-light fa-minus"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="box-trash">
+                <button class="btn btn-trash delete-item-cart-nav">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between mt-1">
+              <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+              <div class="aside-cart-price-nav-Favorites">40.00 R.s</div>
+
+              <div class="box-total-item-nav-cart">
+                <span class="total-item-nav-Favorites"></span>
+                <span> R.s</span>
+              </div>
+            </div>
+            <div class="border-aside-cart"></div>
+          </div>
+          <div class="box-Favorites-empty">
+            <img src="images/Favorites-empty.jpg" alt="" />
+            <p>Your shopping cart is empty. You can shop now</p>
+            <a href="index.html">Shop now</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- ===================================================================================================== -->
+
+    <section>
+      <div class="box-product-details py-5">
+        <div class="container">
+          <div class="py-5 link-page-home-Present">
+            <h2>product Details</h2>
+            <div class="d-flex align-items-center gap-3 box-home-SHOPPING">
+              <a href="index.html">HOME</a>
+              <span><i class="fa-regular fa-chevron-right"></i></span>
+              <h2>Neue Sofa Chair</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-3 box-slider-product-Details"
+            >
+              <div class="row">
+                <div class="col-lg-12">
+                  <div
+                    class="product-large-thumbnail-4 single-product-thumbnail axil-product"
+                  >
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-1.png" alt="Product Images" />
+                    </div>
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-2.png" alt="Product Images" />
+                    </div>
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-3.png" alt="Product Images" />
+                    </div>
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-4.png" alt="Product Images" />
+                    </div>
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-5.png" alt="Product Images" />
+                    </div>
+                    <div class="thumbnail">
+                      <img src="images/test/Offer-1.png" alt="Product Images" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div
+                    class="small-thumb-wrapper product-small-thumb-4 slick-layout-wrapper--10 axil-slick-arrow arrow-both-side"
+                  >
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-1.png" alt="samll-thumb" />
+                    </div>
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-2.png" alt="samll-thumb" />
+                    </div>
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-3.png" alt="samll-thumb" />
+                    </div>
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-4.png" alt="samll-thumb" />
+                    </div>
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-5.png" alt="samll-thumb" />
+                    </div>
+                    <div class="small-thumb-img">
+                      <img src="images/test/Offer-1.png" alt="samll-thumb" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-3">
+              <div class="box-details">
+                <div>
+                  <h1>Neue Sofa Chair Neue Sofa Chair</h1>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem reiciendis quaerat consequatur rem ipsam
+                    minus molestias dolores blanditiis adipisci nulla natus
+                    aliquam dicta repellendus non ab labore, vero eveniet
+                    corporis.
+                  </p>
+                  <div class="type-product">
+                    <span>Wood type: </span> Counter is distinguished
+                  </div>
+                  <div class="box-icon-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+
+                    <span>(64 reviews)</span>
+                  </div>
+                  <h2>539.00 r.s <span>(VAT included)</span></h2>
+                </div>
+                <div class="box-Offers-days my-3">
+                  <div class="estimator_first">Order now</div>
+                  <div class="sc-5ed5f9ca-0 knlgUL">
+                    <div class="iconLightning">
+                      <div class="message">
+                        <div class="iconLightning">
+                          <i class="fa-light fa-truck"></i>
+                        </div>
+                        <div>
+                          <div>Free delivery</div>
+                          <span>for this product.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- -------------------------------------------------- -->
+                <!-- Cannot be returned -->
+                <!-- <div class="box-Offers-days my-3">
+                  <div class="estimator_first">This product is safe</div>
+                  <div class="sc-5ed5f9ca-0 knlgUL">
+                    <div class="iconLightning">
+                      <div class="message">
+                        <div class="iconLightning">
+                          <i class="fa-solid fa-xmark-to-slot"></i>
+                        </div>
+                        <div>
+                          <div>
+                            This product cannot be exchanged or returned
+                          </div>
+                          <span>Thank you for your trust with us</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- ----------------- -->
+
+                <!-- can be returned -->
+
+                <div class="box-Offers-days my-3">
+                  <div class="estimator_first">This product is safe</div>
+                  <div class="sc-5ed5f9ca-0 knlgUL">
+                    <div class="iconLightning">
+                      <div class="message">
+                        <div class="iconLightning">
+                          <i class="fa-duotone fa-rotate-left"></i>
+                        </div>
+                        <div>
+                          <div>
+                            This product can be exchanged or returned for 15
+                            days from the day of delivery
+                          </div>
+                          <span>Thank you for your trust with us</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- --------------------------------------------- -->
+
+                <div class="box-Quantity">
+                  <h2>Quantity</h2>
+                  <div class="">
+                    <form class="box-form-Add-increase-decrease hid-in-footer">
+                      <div class="form-cart detail-qty">
+                        <button
+                          type="button"
+                          class="btn increaseButtonItem btn-increase-increase"
+                        >
+                          <i class="fa-light fa-plus"></i>
+                        </button>
+                        <input
+                          class="qty-val form-control quantityInput"
+                          type="text"
+                          name="quantity"
+                          value="1"
+                          min="1"
+                        />
+                        <button
+                          type="button"
+                          class="btn decreaseButtonItem btn-increase-decrease"
+                        >
+                          <i class="fa-light fa-minus"></i>
+                        </button>
+                      </div>
+
+                      <div class="box-btn-heart-product">
+                        <button
+                          type="button"
+                          class="btn btn-add-to-cart btn-cart"
+                        >
+                          <!-- <span
+                            ><i class="fa-duotone fa-cart-shopping"></i>
+                          </span> -->
+                          Add to cart
+                        </button>
+                      </div>
+
+                      <div class="box-heart">
+                        <button type="button" class="btn-heart-product btn">
+                          <i class="fa-solid fa-heart"></i>
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="box-Offers-days my-3 p-3">
+                  <!-- <div class="estimator_first">This product is safe</div> -->
+                  <div class="sc-5ed5f9ca-0 knlgUL">
+                    <div class="iconLightning">
+                      <div class="message">
+                        <div class="iconLightning">
+                          <i class="fa-solid fa-bolt-lightning"></i>
+                        </div>
+                        <div>
+                          <div>
+                            If you buy 3 products, the fourth product is free
+                          </div>
+                          <span
+                            >The more the quantity increases You get a
+                            discount</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================================================== -->
+    <!-- ===================================================================================================== -->
+    <!-- tab -->
+    <section>
+      <div class="container box-all-tab">
+        <h2 class="mb-4 headline">About This Product</h2>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Product overview
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Product details
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-Description-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-Description"
+              type="button"
+              role="tab"
+              aria-controls="pills-Description"
+              aria-selected="false"
+            >
+              Description
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Rating
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content box-Product-overview" id="pills-tabContent">
+          <div
+            class="tab-pane box-item-tab fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            <div>
+              <h2 class="headline">Product overview</h2>
+              <h3 class="mt-5">Neue Sofa Chair Neue Sofa Chair</h3>
+              <p>
+                Nokia 105 (2017) was launched in July 2017. The phone comes with
+                a 1.80-inch display with a resolution of 120 x 160 pixels. Nokia
+                105 (2017) is powered by a single-core processor. It comes with
+                4 MB RAM. The Nokia 105 (2017) Series 30 is powered by a
+                removable battery with a capacity of 800 mAh. The Nokia 105
+                (2017) Series 30 packs 4MB of onboard storage. Nokia 105 (2017)
+                Dual SIM (GSM + CDMA and GSM + CDMA. Connectivity options on the
+                Nokia 105 (2017) include FM radio. Nokia 105 (2017) measures
+                112.00 x 49.50 x 14.40 mm (height x width x thickness) and
+                weighs 73.00 grams.
+              </p>
+            </div>
+          </div>
+          <div
+            class="box-item-tab tab-Product-details tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            <h2 class="headline">Product details</h2>
+            <ul>
+              <li>1.8-inch screen with a resolution of 120 x 160 pixels</li>
+              <li>800mAH lithium-ion battery</li>
+              <li>S30+ operating system</li>
+              <li>Slim form factor gives the phone a premium finish</li>
+              <li>5K colour display provides vibrant colour reproduction</li>
+              <li>Charging type Micro USB</li>
+              <li>The size of the RAM is 4 MB</li>
+              <li>Battery size is 800 MAh</li>
+              <li>Model number Nokia 105</li>
+              <li>Network 5G</li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade box-item-tab"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="box-rating">
+                  <div class="">
+                    <h2 class="headline">Add Rating</h2>
+                    <h2 class="box-Rate-this-product mt-4">
+                      <span>0</span> Rate this product
+                      <span class="star"
+                        >(0<i class="fa-solid fa-star"></i>)</span
+                      >
+                    </h2>
+                  </div>
+                  <form action="">
+                    <div class="box-Your-Rating">
+                      <h3>Your Rating</h3>
+                      <div class="rating-inner ml--20 box-star-rating">
+                        <div class="star">
+                          <i class="fas fa-star empty-rating"></i>
+                        </div>
+                        <div class="star">
+                          <i class="fas fa-star empty-rating"></i>
+                        </div>
+                        <div class="star">
+                          <i class="fas fa-star empty-rating"></i>
+                        </div>
+                        <div class="star">
+                          <i class="fas fa-star empty-rating"></i>
+                        </div>
+                        <div class="star">
+                          <i class="fas fa-star empty-rating"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-Your-comment row">
+                      <div class="my-3 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                          placeholder="Your comment"
+                        ></textarea>
+                      </div>
+                      <div>
+                        <button type="submit" class="btn btn-Rating-comment">
+                          submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="box-Product-evaluation">
+                  <div class="box-rating-text-titel">
+                    <h2 class="headline">Product evaluation</h2>
+
+                    <div>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-Choose-product-rating dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose product rating
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Most recent rating</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Highest rated</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Lowest rating</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-item-Product-evaluation">
+                    <div class="item-product-evaluation">
+                      <div class="box-rating-text-titel">
+                        <div class="box-Letter-name-deta-evaluation">
+                          <div class="Letter-evaluation">M</div>
+                          <div>
+                            <h4>Mohamed Salem Salem</h4>
+                            <h5>10/10/2023</h5>
+                          </div>
+                        </div>
+
+                        <div class="box-Highest-rated-5">
+                          <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p>
+                          Very reasonable price, beautiful company, punctual,
+                          and the product is very useful. Very reasonable price,
+                          beautiful company, punctual, and the product is very
+                          useful.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item-product-evaluation">
+                      <div class="box-rating-text-titel">
+                        <div class="box-Letter-name-deta-evaluation">
+                          <div class="Letter-evaluation">M</div>
+                          <div>
+                            <h4>Mohamed Salem Salem</h4>
+                            <h5>10/10/2023</h5>
+                          </div>
+                        </div>
+
+                        <div class="box-Highest-rated-5">
+                          <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p>
+                          Very reasonable price, beautiful company, punctual,
+                          and the product is very useful. Very reasonable price,
+                          beautiful company, punctual, and the product is very
+                          useful.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="item-product-evaluation">
+                      <div class="box-rating-text-titel">
+                        <div class="box-Letter-name-deta-evaluation">
+                          <div class="Letter-evaluation">M</div>
+                          <div>
+                            <h4>Mohamed Salem Salem</h4>
+                            <h5>10/10/2023</h5>
+                          </div>
+                        </div>
+
+                        <div class="box-Highest-rated-5">
+                          <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p>
+                          Very reasonable price, beautiful company, punctual,
+                          and the product is very useful. Very reasonable price,
+                          beautiful company, punctual, and the product is very
+                          useful.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item-product-evaluation">
+                      <div class="box-rating-text-titel">
+                        <div class="box-Letter-name-deta-evaluation">
+                          <div class="Letter-evaluation">M</div>
+                          <div>
+                            <h4>Mohamed Salem Salem</h4>
+                            <h5>10/10/2023</h5>
+                          </div>
+                        </div>
+
+                        <div class="box-Highest-rated-5">
+                          <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p>
+                          Very reasonable price, beautiful company, punctual,
+                          and the product is very useful. Very reasonable price,
+                          beautiful company, punctual, and the product is very
+                          useful.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item-product-evaluation">
+                      <div class="box-rating-text-titel">
+                        <div class="box-Letter-name-deta-evaluation">
+                          <div class="Letter-evaluation">M</div>
+                          <div>
+                            <h4>Mohamed Salem Salem</h4>
+                            <h5>10/10/2023</h5>
+                          </div>
+                        </div>
+
+                        <div class="box-Highest-rated-5">
+                          <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="">
+                        <p>
+                          Very reasonable price, beautiful company, punctual,
+                          and the product is very useful. Very reasonable price,
+                          beautiful company, punctual, and the product is very
+                          useful.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade box-item-tab"
+            id="pills-Description"
+            role="tabpanel"
+            aria-labelledby="pills-Description-tab"
+            tabindex="0"
+          >
+            <div>
+              <h2 class="headline">Description</h2>
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                  <div class="box-Description">
+                    <a href="path_to_your_file.pdf" download>
+                      <h3>Neue Sofa Chair Neue Sofa Chair</h3>
+                      <img src="images/test/Offer-1.png" alt="" />
+                    </a>
+                    <!-- <button class="btn btn-Download" onclick="window.location.href='path_to_your_file.pdf'">Download</button> -->
+                    <a class="btn btn-Download" href="file/path_to_your_file.pdf" target="_blank" >Download</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                  <div class="box-Description">
+                    <a href="path_to_your_file.pdf" download>
+                      <h3>Neue Sofa Chair Neue Sofa Chair</h3>
+                      <img src="images/test/Offer-1.png" alt="" />
+                    </a>
+                    <!-- <button class="btn btn-Download" onclick="window.location.href='path_to_your_file.pdf'">Download</button> -->
+                    <a class="btn btn-Download" href="file/path_to_your_file.pdf" target="_blank" >Download</a>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                  <div class="box-Description">
+                    <a href="path_to_your_file.pdf" download>
+                      <h3>Neue Sofa Chair Neue Sofa Chair</h3>
+                      <img src="images/test/Offer-1.png" alt="" />
+                    </a>
+                    <!-- <button class="btn btn-Download" onclick="window.location.href='path_to_your_file.pdf'">Download</button> -->
+                    <a class="btn btn-Download" href="file/path_to_your_file.pdf" target="_blank" >Download</a>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+         
+          </div>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+    <!-- Offers -->
+    <section class="">
+      <div class="py-5">
+        <div class="container">
+          <div class="box-Offers-slick-btn">
+            <div class="my-3">
+              <h2 class="headline">Bestsellers for you</h2>
+            </div>
+            <div class="text-center box-offers-slick">
+              <div class="your-Offers">
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="box-offers my-5 mx-2">
+                    <div class="box-img-Offer-Slider">
+                      <a href="product-details.html">
+                        <img
+                          src="images/test/Offer-1.png"
+                          class="w-100"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="label-block">
+                      <div class="product-badget">20% OFF</div>
+
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                      <div class="product-badget">Out of stock</div>
+                    </div>
+                    <div class="box-Add-to-cart">
+                      <div class="w-100">
+                        <button class="btn btn-cart w-100"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-heart"></button>
+                    </div>
+
+                    <div class="text-center">
+                      <h3>Neue Sofa Chair Neue Sofa Chair Neue Sofa Chair</h3>
+                      <div class="box-offers">
+                        <span class="sell-offers">$80</span>
+                        <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-all">
+              <a href="/">All Offers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- footer -->
+    <footer>
+      <div class="container my-5 box-all-footer">
+        <div class="text-center box-Services-slick">
+          <div class="your-Services">
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-duotone fa-rotate-left"></i>
+                </div>
+
+                <div>
+                  <h3>Easy Return</h3>
+                  <p>Easily return the product</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-truck"></i>
+                </div>
+                <div>
+                  <h3>Delivary</h3>
+                  <p>Delivery of all orders of all types</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-duotone fa-percent"></i>
+                </div>
+
+                <div>
+                  <h3>Member Discount</h3>
+                  <p>Continuous discounts with Wazin</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-headset"></i>
+                </div>
+
+                <div>
+                  <h3>Support 24/7</h3>
+                  <p>Customer support 24 hours a day</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-dollar-sign"></i>
+                </div>
+
+                <div>
+                  <h3>Quick Payment</h3>
+                  <p>There is more than one method of payment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-footer">
+        <div class="layer">
+          <div class="container py-3">
+            <div class="row justify-content-center">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3">
+                <div>
+                  <div>
+                    <div class="logo-footer">
+                      <img
+                        class="headline-footer"
+                        src="https://shofy-nuxt.vercel.app/img/logo/logo.svg"
+                        alt=""
+                      />
+                    </div>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quas dolorum neque necessitatibus nulla eaque, officiis
+                      tempore reiciendis. Totam cum odit .
+                    </p>
+                  </div>
+
+                  <!-- icon Social Media  -->
+                  <div class="box-icon-footer">
+                    <div class="icon">
+                      <a target="_blank" href="https://facebook.com">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://twitter.com">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 512 512"
+                          class="custom-icon"
+                        >
+                          <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://snapchat.com">
+                        <i class="fa-brands fa-snapchat"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://tiktok.com">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://youtube.com">
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="tel:20112345566788">
+                        <i class="fa-solid fa-phone"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Master Card visa -->
+                  <div class="">
+                    <div class="box-icon-footer">
+                      <div class="box-Payment">
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/mada.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/visa.png" alt="" />
+                        </div>
+
+                        <div class="box-img-Payment">
+                          <img
+                            src="images/Footer/Payment/MasterCard.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/stc.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/7.jpg" alt="" />
+                        </div>
+
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/1.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/cash.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3 d-flex justify-content-center"
+              >
+                <div>
+                  <h3 class="headline-footer">My Account</h3>
+                  <div class="box-Informations">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="Blog.html">Blog</a></li>
+                      <li><a href="FAQ'S.html">FAQ'S</a></li>
+                      <li><a href="All-Products.html">All Products</a></li>
+                      <li><a href="Profile.html"> My Account </a></li>
+                      <li><a href="Connect-us.html">Connect-us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 my-3">
+                <div class="my-3">
+                  <div class="box-tax">
+                    <div class="box-tax-img">
+                      <img src="images/Footer/Tax.png" alt="" />
+                    </div>
+                    <div class="box-text-tax">
+                      <p>Al Wasl Point Foundation for Information Technology</p>
+                      <p>Commercial Registry: 4030376574</p>
+                      <p>Tax Number: 310531587200003</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ccc -->
+                <div class="box-img-business">
+                  <img
+                    src="images/Footer/White-Saudi-Business-Center-190x65w.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Rights-Reserved">
+            <div class="container">
+              <div class="text-center">
+                <!-- Rights Reserved -->
+                <div>
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    Wazin All Rights Reserved
+                  </div>
+                </div>
+
+                <!-- logo wazin -->
+                <div>
+                  <div class="box-logo-wazin-img-text mt-2">
+                    <a href="/" target="_blank">
+                      <div>
+                        <div>Made with love in</div>
+                        <div class="box-logo-wazin-img">
+                          <img
+                            class="w-100 m-auto"
+                            src="images/logo-wazin.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- js -->
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- the compressed, production -->
+    <script src="js/main-en.js"></script>
+    <!-- <script src="js/main-ar.js"></script> -->
+
+    <!-- ===================================================================================================== -->
+    <!-- ===================================================================================================== -->
+  </body>
+</html>

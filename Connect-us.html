@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta
+    name="description"
+    content="A website that sells all products, such as washing machines, refrigerators, computer screens, and mobile phones"
+  />
+  <meta name="keywords" content="ecommerce, shopping" />
+  <meta name="author" content="Wazin" />
+  <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wazin</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="icon" href="images/test/hover-image-01.webp" type="" />
+
+  <!-- ===================================================================================================== -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- ===================================================================================================== -->
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- ===================================================================================================== -->
+
+  <!-- slick -->
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+
+  <!-- ===================================================================================================== -->
+  <!-- style css en & ar -->
+
+  <!-- the compressed, production -->
+  <!-- <link rel="stylesheet" href="css/style-en.css" /> -->
+  <!-- <link rel="stylesheet" href="css/style-ar.css" /> -->
+
+  <!-- the uncompressed, development -->
+  <link rel="stylesheet" href="css/style-en.min.css" />
+  <!-- <link rel="stylesheet" href="css/style-ar.min.css" /> -->
+  <!-- ===================================================================================================== -->
+
+  <style>
+    :root {
+      --mainColor: #4d7388;
+      --headerTitle: #000;
+      --headerParagraph: #000;
+      --subTitleFooter: rgb(255, 255, 255);
+    }
+  </style>
+  <!-- ===================================================================================================== -->
+</head>
+<body>
+  <!-- ===================================================================================================== -->
+
+  <!-- spinners -->
+  <section id="loading" class="justify-content-center align-items-center">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </section>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- progress -->
+  <div id="progress">
+    <span id="progress-value" title="Scroll To Top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- navbar -->
+  <nav id="box-nav-fixed">
+    <!-- mobile -->
+    <div>
+      <div>
+        <div class="box-icon-nav-mobile" id="box-icon-nav-mobile">
+          <!-- -------------------------------------------------- -->
+          <!-- Personal mobile -->
+
+          <div class="item-icon-nav box-Personal-all">
+            <!-- <div class="dropdown">
+              <button
+                class="btn btn-secondary btn-dropdown-name"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="box-Personal">
+                  <div class="d-flex gap-1 align-items-center">
+                    <i class="fa-regular fa-hand-wave"></i>
+                    Hello,
+                    <div class="name-nav">Mohamed Salem efsdfsdgdg</div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </div>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="Profile.html">
+                    <span> <i class="fa-light fa-user"></i> </span>
+                    Edit Profile
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Profile.html">
+                    <span>
+                      <i class="fa-solid fa-map-location-dot"></i>
+                    </span>
+                    Address
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Profile.html">
+                    <span>
+                      <i class="fa-light fa-cart-shopping-fast"></i>
+                    </span>
+
+                    Orders
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Profile.html">
+                    <span> <i class="fa-duotone fa-rotate-left"></i> </span>
+
+                    Returns
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Profile.html">
+                    <span>
+                      <i class="fa-solid fa-circle-exclamation"></i>
+                    </span>
+                    Loyalty points
+                  </a>
+                </li>
+                <li>
+                  <button type="" class="dropdown-item">
+                    <span>
+                      <i
+                        class="fa-duotone fa-person-walking-arrow-loop-left"
+                      ></i>
+                    </span>
+                    Log out
+                  </button>
+                </li>
+              </ul>
+            </div> -->
+
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              class="btn btn-login"
+            >
+              <i class="fa-light fa-user"></i>
+              <span> Login </span>
+            </button>
+          </div>
+          <!-- -------------------------------------------------- -->
+          <!-- search mobile-->
+          <div class="item-icon-nav box-search-nav">
+            <div class="dropdown">
+              <button
+                class="btn btn-search btn-search-nav"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-regular fa-magnifying-glass"></i>
+              </button>
+              <div class="dropdown-menu">
+                <!-- search Toggle-->
+                <div class="mkd-form-holder box-form-nav">
+                  <form>
+                    <div class="box-input-btn-nav-search">
+                      <input
+                        type="text"
+                        placeholder="Search for products..."
+                        name="s"
+                        class="form-control input-nav-search"
+                        autocomplete="off"
+                      />
+                      <button type="submit" class="btn-search-submit">
+                        <i class="fa-light fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------------------------- -->
+          <!-- heart mobile-->
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbarHeart"
+            aria-controls="offcanvasNavbarHeart"
+            aria-label="Toggle navigation"
+            class="item-icon-nav box-cart"
+          >
+            <i class="fa-light fa-heart"></i>
+            <span class="number-heart"></span>
+          </button>
+
+          <!-- -------------------------------------------------- -->
+          <!-- cart mobile -->
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            class="item-icon-nav box-cart btn-cart-nav"
+          >
+            <i class="fa-light fa-cart-shopping"></i>
+            <span class="number-cart"></span>
+          </button>
+
+          <!-- -------------------------------------------------- -->
+
+          <!-- -------------------------------------------------- -->
+          <!-- language mobile-->
+          <div class="item-icon-nav language-nav">
+            <ul class="">
+              <li>
+                <a class="dropdown-item" href="/">
+                  <div>
+                    <img src="images/language/Arab.png" alt="" />
+                  </div>
+                  <span class="css-wuhtur">عربي </span>
+                </a>
+              </li>
+
+              <!-- <li>
+                <a
+                  class="dropdown-item"
+                  href="/"
+                >
+                  <div>
+                    <img src="images/language/English.png" alt="" />
+                  </div>
+                  <span class="css-wuhtur">English</span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-nav-all">
+      <div class="container">
+        <div class="box-nav">
+          <div class="d-flex align-items-center">
+            <div>
+              <!-- logo -->
+              <a class="navbar-brand" href="index.html">
+                <div class="text-center logo-nav py-2">
+                  <img
+                    src="https://shofy-nuxt.vercel.app/img/logo/logo.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- link page -->
+          <div>
+            <div class="box-cilsh-nav">
+              <a href="index.html" class="item-nav Link-nav active-nav"
+                >Home
+                <span data-v-1ca82a91="" class="span-bored"></span>
+              </a>
+              <a href="#About-Us" class="item-nav Link-nav"
+                >About Us
+                <span data-v-1ca82a91="" class="span-bored"></span>
+              </a>
+
+              <a href="All-Products.html" class="item-nav Link-nav"
+                >All Products
+                <span data-v-1ca82a91="" class="span-bored"></span>
+              </a>
+              <div class="item-na Link-na box-Categories-Nav">
+                All Categories
+                <span class="arrow-Categories">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </span>
+                <span data-v-1ca82a91="" class="span-bored"></span>
+
+                <div class="box-all-menu-dropdown">
+                  <div class="box-item-dropdown2">
+                    <div class="row box-2-dropdown">
+                      <div class="col-3 box-Link-Categories">
+                        <ul class="ul-Categories">
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-female"></i
+                                ></span>
+                                Women's Clothing
+                              </div>
+                            </div>
+
+                            <div class="sub-menu-dropdown">
+                              <div class="row box-sub-sub-dropdown-mo">
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">OUTWEAR & SWEATERS</a></h3>
+                                    <ul class="">
+                                      <li><a href="/">Blazers</a></li>
+                                      <li>
+                                        <a href="/">Hoodies & Sweatshirts</a>
+                                      </li>
+                                      <li><a href="/">Trench</a></li>
+                                      <li><a href="/">Cardigans</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">BOTTOMS</a></h3>
+                                    <ul class="">
+                                      <li class=""><a href="/">Skirts</a></li>
+                                      <li><a href="/">Shorts</a></li>
+                                      <li><a href="/">Jeans</a></li>
+                                      <li><a href="/">Pants & Capris</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">ACCESSORIES</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">OUTWEAR & SWEATERS</a>
+                                      </li>
+                                      <li><a href="/">Headwear</a></li>
+                                      <li><a href="/">Baseball Caps</a></li>
+                                      <li><a href="/">Sunglasses</a></li>
+                                      <li><a href="/">Belts</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">HOT SEARCH</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">Panties</a>
+                                      </li>
+                                      <li><a href="/">Bras</a></li>
+                                      <li><a href="/">Shapers</a></li>
+                                      <li>
+                                        <a href="/">Bra & Brief Sets</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">HOT CATEGORIES</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">Dresses</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Blouses & Shirts</a>
+                                      </li>
+                                      <li><a href="/">T-Shirts</a></li>
+                                      <li><a href="/">Tank Tops</a></li>
+                                      <li>
+                                        <a href="/">Jumpsuits & Rompers</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-male"></i
+                                ></span>
+                                Men's Clothing
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa-solid fa-clock"></i
+                                ></span>
+                                WATCHES
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-briefcase"></i
+                                ></span>
+                                BAGS & SHOES
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-shopping-cart"></i
+                                ></span>
+                                SHOES
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa-solid fa-gem"></i
+                                ></span>
+                                JEWELLERY
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-star"></i
+                                ></span>
+                                ACCESSORIES
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-child"></i
+                                ></span>
+                                TOYS, KIDS & BABY
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa-solid fa-volleyball"></i
+                                ></span>
+                                SPORTS & OUTDOORS
+                              </div>
+                            </div>
+                          </li>
+                          <li class="menu-item">
+                            <div class="sho-arrow Link-item-Categories">
+                              <div class="">
+                                <span class="icon-item-Categories"
+                                  ><i class="fa fa-anchor"></i
+                                ></span>
+                                HEALTH & BEAUTY
+                              </div>
+                            </div>
+
+                            <div class="sub-menu-dropdown">
+                              <div class="row box-sub-sub-dropdown-mo">
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">OUTWEAR & SWEATERS</a></h3>
+                                    <ul class="">
+                                      <li><a href="/">Blazers</a></li>
+                                      <li>
+                                        <a href="/">Hoodies & Sweatshirts</a>
+                                      </li>
+                                      <li><a href="/">Trench</a></li>
+                                      <li><a href="/">Cardigans</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">BOTTOMS</a></h3>
+                                    <ul class="">
+                                      <li class=""><a href="/">Skirts</a></li>
+                                      <li><a href="/">Shorts</a></li>
+                                      <li><a href="/">Jeans</a></li>
+                                      <li><a href="/">Pants & Capris</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">ACCESSORIES</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">OUTWEAR & SWEATERS</a>
+                                      </li>
+                                      <li><a href="/">Headwear</a></li>
+                                      <li><a href="/">Baseball Caps</a></li>
+                                      <li><a href="/">Sunglasses</a></li>
+                                      <li><a href="/">Belts</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">HOT SEARCH</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">Panties</a>
+                                      </li>
+                                      <li><a href="/">Bras</a></li>
+                                      <li><a href="/">Shapers</a></li>
+                                      <li>
+                                        <a href="/">Bra & Brief Sets</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="col-3 my-2">
+                                  <div class="box-item-sub">
+                                    <h3><a href="">HOT CATEGORIES</a></h3>
+                                    <ul class="">
+                                      <li class="">
+                                        <a href="/">Dresses</a>
+                                      </li>
+                                      <li>
+                                        <a href="/">Blouses & Shirts</a>
+                                      </li>
+                                      <li><a href="/">T-Shirts</a></li>
+                                      <li><a href="/">Tank Tops</a></li>
+                                      <li>
+                                        <a href="/">Jumpsuits & Rompers</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="col-9 d-flex align-items-center box-img-offers-Categories-mo"
+                      >
+                        <div class="row align-items-center">
+                          <div class="col-2">
+                            <!-- <a href="/" class="box-img-Categories">
+                              <img src="images/test/hader-2.png" alt="" />
+                            </a> -->
+                          </div>
+                          <div class="col-6">
+                            <div class="row">
+                              <div class="col-12 my-2">
+                                <a href="/" class="box-img-Categories-2">
+                                  <img
+                                    src="images/test/3-Categories.jpg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                              <div class="col-12 my-2">
+                                <a href="/" class="box-img-Categories-2">
+                                  <img
+                                    src="images/test/2-Categories.jpg"
+                                    alt=""
+                                  />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-4">
+                            <a href="/" class="box-img-Categories-1">
+                              <img
+                                src="images/test/1-Categories.jpg"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="Connect-us.html" class="item-nav Link-nav"
+                >Contact Us
+                <span data-v-1ca82a91="" class="span-bored"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <!-- -------------------------------------------------- -->
+            <!-- pc -->
+            <div>
+              <div class="box-icon-nav-pc">
+                <!-- -------------------------------------------------- -->
+                <!-- search-nav -->
+                <div class="item-icon-nav box-search-nav">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-search btn-search-nav"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-regular fa-magnifying-glass"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <!-- search Toggle-->
+                      <div class="mkd-form-holder box-form-nav">
+                        <form>
+                          <div class="box-input-btn-nav-search">
+                            <input
+                              type="text"
+                              placeholder="Search for products..."
+                              name="s"
+                              class="form-control input-nav-search"
+                              autocomplete="off"
+                            />
+                            <button type="submit" class="btn-search-submit">
+                              <i class="fa-light fa-arrow-right"></i>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- -------------------------------------------------- -->
+                <!-- cart -->
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart btn-cart-nav"
+                >
+                  <i class="fa-light fa-cart-shopping"></i>
+                  <span class="number-cart"></span>
+                </button>
+
+                <!-- -------------------------------------------------- -->
+                <!-- heart -->
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbarHeart"
+                  aria-controls="offcanvasNavbarHeart"
+                  aria-label="Toggle navigation"
+                  class="item-icon-nav box-cart"
+                >
+                  <i class="fa-light fa-heart"></i>
+                  <span class="number-heart"></span>
+                </button>
+
+                <!-- -------------------------------------------------- -->
+                <!-- user Navbar      -->
+                <div class="item-icon-nav box-Personal-all">
+                  <!-- <div class="dropdown">
+                    <button
+                      class="btn btn-secondary btn-dropdown-name"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div class="box-Personal">
+                        <div class="d-flex gap-1 align-items-center">
+                          <i class="fa-regular fa-hand-wave"></i>
+                          Hello,
+                          <div class="name-nav">Mohamed Salem efsdfsdgdg</div>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                      </div>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="Profile.html">
+                          <span> <i class="fa-light fa-user"></i> </span>
+                          Edit Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="Profile.html">
+                          <span>
+                            <i class="fa-solid fa-map-location-dot"></i>
+                          </span>
+                          Address
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="Profile.html">
+                          <span>
+                            <i class="fa-light fa-cart-shopping-fast"></i>
+                          </span>
+
+                          Orders
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="Profile.html">
+                          <span>
+                            <i class="fa-duotone fa-rotate-left"></i>
+                          </span>
+
+                          Returns
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="Profile.html">
+                          <span>
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                          </span>
+                          Loyalty points
+                        </a>
+                      </li>
+                      <li>
+                        <button type="" class="dropdown-item">
+                          <span>
+                            <i
+                              class="fa-duotone fa-person-walking-arrow-loop-left"
+                            ></i>
+                          </span>
+                          Log out
+                        </button>
+                      </li>
+                    </ul>
+                  </div> -->
+
+                  <button
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="btn btn-login"
+                  >
+                    <i class="fa-light fa-user"></i>
+                    <span> Login </span>
+                  </button>
+                </div>
+
+                <!-- -------------------------------------------------- -->
+                <!-- language -->
+                <div class="item-icon-nav language-nav">
+                  <ul class="">
+                    <li>
+                      <a class="dropdown-item" href="/">
+                        <div>
+                          <img src="images/language/Arab.png" alt="" />
+                        </div>
+                        <span class="css-wuhtur">عربي </span>
+                      </a>
+                    </li>
+
+                    <!-- <li>
+                      <a
+                        class="dropdown-item"
+                        href="/"
+                      >
+                        <div>
+                          <img src="images/language/English.png" alt="" />
+                        </div>
+                        <span class="css-wuhtur">English</span>
+                      </a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- icon maunn -->
+            <div class="mun-align">
+              <button class="maunn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------------------------------------------- -->
+
+      <!-- -------------------------------------------------- -->
+
+      <!-- -------------------------------------------------- -->
+    </div>
+  </nav>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- whatsapp -->
+  <section>
+    <div>
+      <div class="box-icon-whatsapp">
+        <a target="_blank" href="https://wa.me/201234567890">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- login  -->
+  <section>
+    <div
+      class="modal fade box-Modal"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered box-Modal-SignUp">
+        <div class="modal-content">
+          <!-- Login -->
+          <div class="modal-body row" id="login">
+            <div
+              class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 box-Login-mo-pc"
+              id="main"
+              id="login"
+            >
+              <div class="sec-content">
+                <div class="box-SignUp">
+                  <form class="box-form-SignUp">
+                    <div class="form-group py-2">
+                      <label for="exampleInputphone">Phone Or E-mail</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="exampleInputphone"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter phone Or email"
+                      />
+                    </div>
+
+                    <div class="box-Submit-reset">
+                      <button
+                        type="button"
+                        class="btn btn-Submit my-2"
+                        id="submitBtnPhone"
+                      >
+                        Submit
+                      </button>
+
+                      <button type="reset" class="btn btn-Reset my-2">
+                        Reset
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
+              <div class="box-svg">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="67px"
+                  viewBox="-10 0 67 578"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <title>Path</title>
+                  <desc>Created with Sketch.</desc>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
+                      id="Path"
+                      fill="var(--mainColor)"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="column" id="secondary">
+                <div class="sec-content">
+                  <div class="item-sec-content">
+                    <h2>Login</h2>
+                    <h3>Welcome Back!</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    </p>
+                    <button
+                      type="button"
+                      class="btn btn-Close-Login"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-svg-width">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                  fill-opacity="1"
+                  d="M0,0L48,48C96,96,192,192,288,202.7C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Code (initially) -->
+          <div class="modal-body row" id="code">
+            <div
+              class="column col-xl-6 col-lg-6 col-md-6 col-sm-12 box-Login-mo-pc"
+            >
+              <div class="sec-content">
+                <div class="box-SignUp">
+                  <form class="box-form-SignUp">
+                    <div class="form-group py-2">
+                      <label for="exampleInputphone">Enter Code</label>
+
+                      <div class="box-code">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                        />
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                        />
+
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                        />
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputphone"
+                          aria-describedby="emailHelp"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="box-Submit-reset">
+                      <button type="submit" class="btn btn-Submit my-2">
+                        Submit
+                      </button>
+
+                      <button type="reset" class="btn btn-Reset my-2">
+                        Reset
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex">
+              <div class="box-svg">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg
+                  width="67px"
+                  viewBox="-10 0 67 500"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                  <title>Path</title>
+                  <desc>Created with Sketch.</desc>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      d="M11.3847656,-5.68434189e-14 C-7.44726562,36.7213542 5.14322917,126.757812 49.15625,270.109375 C70.9827986,341.199016 54.8877465,443.829224 0.87109375,578 L67,578 L67,-5.68434189e-14 L11.3847656,-5.68434189e-14 Z"
+                      id="Path"
+                      fill="var(--mainColor)"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="column" id="secondary">
+                <div class="sec-content">
+                  <div class="item-sec-content">
+                    <h2>Code has been sent</h2>
+                    <p>Enter the code sent to you. Thank you</p>
+                    <div class="box-btn-Close-Login">
+                      <button
+                        type="button"
+                        class="btn btn-Login-page-code"
+                        id="submitBtnCode"
+                      >
+                        Login
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-Close-Login"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-svg-width">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                  fill-opacity="1"
+                  d="M0,0L48,48C96,96,192,192,288,202.7C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,240C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- Cart -->
+  <aside>
+    <div
+      class="offcanvas box-aside-Cart offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasNavbarLabel">
+          YOUR CART (2 ITEMS)
+        </h2>
+        <button
+          type="button"
+          class="btn-close-cart btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          close
+        </button>
+      </div>
+      <hr />
+      <div class="offcanvas-body">
+        <div
+          class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+        >
+          <div class="box-aside-cart-img-Quantity-trash">
+            <div class="box-img-aside-cart">
+              <img src="images/test/Offer-1.png" alt="" />
+            </div>
+
+            <div>
+              <form>
+                <div class="form-cart detail-qty">
+                  <button
+                    type="button"
+                    class="btn increaseButtonNavCart btn-increase-increase"
+                  >
+                    <i class="fa-light fa-plus"></i>
+                  </button>
+                  <input
+                    class="qty-val-nav-cart form-control"
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <button
+                    type="button"
+                    class="btn decreaseButtonNavCart btn-increase-decrease"
+                  >
+                    <i class="fa-light fa-minus"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="box-trash">
+              <button class="btn btn-trash delete-item-cart-nav">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-1">
+            <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+            <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+            <div class="box-total-item-nav-cart">
+              <span class="total-item-nav-cart"></span>
+              <span> R.s</span>
+            </div>
+          </div>
+          <div class="border-aside-cart"></div>
+        </div>
+        <div
+          class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+        >
+          <div class="box-aside-cart-img-Quantity-trash">
+            <div class="box-img-aside-cart">
+              <img src="images/test/Offer-1.png" alt="" />
+            </div>
+
+            <div>
+              <form>
+                <div class="form-cart detail-qty">
+                  <button
+                    type="button"
+                    class="btn increaseButtonNavCart btn-increase-increase"
+                  >
+                    <i class="fa-light fa-plus"></i>
+                  </button>
+                  <input
+                    class="qty-val-nav-cart form-control"
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <button
+                    type="button"
+                    class="btn decreaseButtonNavCart btn-increase-decrease"
+                  >
+                    <i class="fa-light fa-minus"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="box-trash">
+              <button class="btn btn-trash delete-item-cart-nav">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-1">
+            <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+            <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+            <div class="box-total-item-nav-cart">
+              <span class="total-item-nav-cart"></span>
+              <span> R.s</span>
+            </div>
+          </div>
+          <div class="border-aside-cart"></div>
+        </div>
+        <div
+          class="box-aside-cart-img-Quantity-trash-border box-item-cart-nav"
+        >
+          <div class="box-aside-cart-img-Quantity-trash">
+            <div class="box-img-aside-cart">
+              <img src="images/test/Offer-1.png" alt="" />
+            </div>
+
+            <div>
+              <form>
+                <div class="form-cart detail-qty">
+                  <button
+                    type="button"
+                    class="btn increaseButtonNavCart btn-increase-increase"
+                  >
+                    <i class="fa-light fa-plus"></i>
+                  </button>
+                  <input
+                    class="qty-val-nav-cart form-control"
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <button
+                    type="button"
+                    class="btn decreaseButtonNavCart btn-increase-decrease"
+                  >
+                    <i class="fa-light fa-minus"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="box-trash">
+              <button class="btn btn-trash delete-item-cart-nav">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-1">
+            <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+            <div class="aside-cart-price-nav-cart">40.00 R.s</div>
+
+            <div class="box-total-item-nav-cart">
+              <span class="total-item-nav-cart"></span>
+              <span> R.s</span>
+            </div>
+          </div>
+          <div class="border-aside-cart"></div>
+        </div>
+
+        <div class="box-Empty-cart">
+          <img src="images/Empty-cart.png" alt="" />
+          <p>Your shopping cart is empty. You can shop now 66666</p>
+          <a href="index.html">Shop now</a>
+        </div>
+      </div>
+
+      <div class="box-Only-Free-Shipping">
+        <div
+          class="progress"
+          role="progressbar"
+          aria-label="Animated striped example"
+          aria-valuenow="100"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            style="width: 100%"
+          >
+            <span class="box-aside-cart-icon-truck"
+              ><i class="fa-solid fa-truck"></i
+            ></span>
+            nly 311.00 R.s away from Free Shipping
+          </div>
+        </div>
+      </div>
+      <div class="box-aside-Cart-TOTAL">
+        <hr />
+        <div class="box-TOTAL-aside-Cart">
+          <h3>TOTAL:</h3>
+          <div>
+            <span class="TOTAL-SUBTOTAL-Nav-Cart"></span><span>R.s</span>
+          </div>
+        </div>
+        <hr />
+
+        <div class="box-aside-Cart-link-cart-link-CheckOut">
+          <a href="cart.html" class="link-Cart"
+            ><span><i class="fa-duotone fa-cart-shopping"></i> </span> Cart</a
+          >
+          <a href="Check-Out.html" class="link-CheckOut">Check Out</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- ===================================================================================================== -->
+
+  <!-- ===================================================================================================== -->
+  <!-- heart -->
+  <aside>
+    <div
+      class="offcanvas box-aside-Cart offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbarHeart"
+      aria-labelledby="offcanvasNavbarHeartLabel"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title" id="offcanvasNavbarHeartLabel">
+          YOUR Favorite (2 ITEMS)
+        </h2>
+        <button
+          type="button"
+          class="btn-close-cart btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          close
+        </button>
+      </div>
+      <hr />
+      <div class="offcanvas-body">
+   
+        <div
+          class="box-aside-cart-img-Quantity-trash-border box-item-Favorites-nav"
+        >
+          <div class="box-aside-cart-img-Quantity-trash">
+            <div class="box-img-aside-cart">
+              <img src="images/test/Offer-1.png" alt="" />
+            </div>
+
+            <div>
+              <form>
+                <div class="form-cart detail-qty">
+                  <button
+                    type="button"
+                    class="btn increaseButtonNavCart btn-increase-increase"
+                  >
+                    <i class="fa-light fa-plus"></i>
+                  </button>
+                  <input
+                    class="qty-val-nav-Favorites form-control"
+                    type="text"
+                    name="quantity"
+                    value="1"
+                    min="1"
+                  />
+                  <button
+                    type="button"
+                    class="btn decreaseButtonNavCart btn-increase-decrease"
+                  >
+                    <i class="fa-light fa-minus"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="box-trash">
+              <button class="btn btn-trash delete-item-cart-nav">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mt-1">
+            <h3>xxx Sofa Chair Neue Sofa Chair</h3>
+
+            <div class="aside-cart-price-nav-Favorites">40.00 R.s</div>
+
+            <div class="box-total-item-nav-cart">
+              <span class="total-item-nav-Favorites"></span>
+              <span> R.s</span>
+            </div>
+          </div>
+          <div class="border-aside-cart"></div>
+        </div>
+        <div class="box-Favorites-empty">
+          <img src="images/Favorites-empty.jpg" alt="" />
+          <p>Your shopping cart is empty. You can shop now </p>
+          <a href="index.html">Shop now</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+
+    <!-- <header>
+      <div class="box-img-page">
+        <div class="bg-img">
+          <div class="layer">
+            <div
+              class="h-100 d-flex align-items-center justify-content-center"
+            >
+              <div class="py-5 link-page-home-Present">
+                <h1 class="">Connect Us</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <header>
+      <div class="box-img-page">
+        <img src="images/bg-img.jpg" alt="" />
+        <div class="layer"></div>
+        <div class="container">
+          <div class="h-100 d-flex align-items-center box-text-bg">
+            <div class="py-5 link-page-home-Present">
+              <h1 class="">Connect Us</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="box-YOUR-Check-Out py-5">
+          <div class="link-page-home-Present">
+            <h2 class="headline">Connect Us</h2>
+            <div class="d-flex align-items-center gap-3 box-home-SHOPPING">
+              <a href="index.html">HOME</a>
+              <span><i class="fa-regular fa-chevron-right"></i></span>
+              <h2>Connect Us</h2>
+            </div>
+          </div>
+          <div class="box-common-questions">
+            <div class="box-form-Connect-us">
+              <div class="py-3">
+                <div class="mb-3">
+                  <h3 class="headline">
+                    Contact us through one of the channels
+                  </h3>
+                </div>
+
+                <div>
+                  <div class="row">
+                    <div
+                      class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3 box-item-through"
+                    >
+                      <a target="_blank" href="tel:20112345566788">
+                        <div class="Link">
+                          <h4>Contact phone number</h4>
+                          <div class="d-flex align-items-center gap-3 mt-4">
+                            <div class="icon-Connect-us">
+                              <i class="fa-duotone fa-phone"></i>
+                            </div>
+                            <div>00 996 6000 5776</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3 box-item-through"
+                    >
+                      <a target="_blank" href="mailto:wazin@gmail.com">
+                        <div class="Link">
+                          <h4>Technical support email</h4>
+                          <div class="d-flex align-items-center gap-3 mt-4">
+                            <div class="icon-Connect-us">
+                              <i class="fa-regular fa-envelopes"></i>
+                            </div>
+                            <div>wazin@gmail.com</div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3 box-item-through"
+                    >
+                      <a
+                        target="_blank"
+                        href="https://maps.app.goo.gl/cxMSCpfkiQKHa4ES8"
+                      >
+                        <div class="Link">
+                          <h4>location</h4>
+                          <div class="d-flex align-items-center gap-3 mt-4">
+                            <div class="icon-Connect-us">
+                              <i class="fa-regular fa-location-dot"></i>
+                            </div>
+                            <div class="titel-location">
+                              Riyadh, Saudi Arabia
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-3 box-item-through"
+                    >
+                      <div class="Link">
+                        <h4>Worktime</h4>
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                          <div class="icon-Connect-us">
+                            <i class="fa-regular fa-clock"></i>
+                          </div>
+                          <div class="titel-location">
+                            From Sunday to Thursday / from 8:00 am - 4:00 pm
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-3 box-item-through"
+                    >
+                      <div class="Link">
+                        <h4>Follow us on social media</h4>
+                        <div class="d-flex align-items-center gap-3 mt-4">
+                          <div class="box-icon-footer">
+                            <div class="icon">
+                              <a target="_blank" href="https://facebook.com">
+                                <i class="fa-brands fa-instagram"></i>
+                              </a>
+                            </div>
+
+                            <div class="icon">
+                              <a target="_blank" href="https://facebook.com">
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </a>
+                            </div>
+
+                            <div class="icon">
+                              <a target="_blank" href="https://twitter.com">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  height="1em"
+                                  viewBox="0 0 512 512"
+                                  class="custom-icon"
+                                >
+                                  <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                                  />
+                                </svg>
+                              </a>
+                            </div>
+                            <div class="icon">
+                              <a target="_blank" href="https://snapchat.com">
+                                <i class="fa-brands fa-snapchat"></i>
+                              </a>
+                            </div>
+
+                            <div class="icon">
+                              <a target="_blank" href="https://tiktok.com">
+                                <i class="fa-brands fa-tiktok"></i>
+                              </a>
+                            </div>
+                            <div class="icon">
+                              <a target="_blank" href="https://youtube.com">
+                                <i class="fa-brands fa-youtube"></i>
+                              </a>
+                            </div>
+                            <div class="icon">
+                              <a target="_blank" href="https://linkedin.com">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="py-3">
+                <div class="mb-4">
+                  <h3 class="headline">Send your inquiry</h3>
+                </div>
+                <form action="">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-2">
+                      <div>
+                        <label
+                          for="exampleFormControlInputAddres1"
+                          class="form-label"
+                          >Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleFormControlInputAddres1"
+                          placeholder="enter Full name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-2">
+                      <div>
+                        <label
+                          for="exampleFormControlInputAddres2"
+                          class="form-label"
+                          >E-mail</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleFormControlInputAddres2"
+                          placeholder="enter email"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-2">
+                      <div>
+                        <label
+                          for="exampleFormControlInputAddres5"
+                          class="form-label"
+                          >Mobile number</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="exampleFormControlInputAddres5"
+                          placeholder="enter Mobile number"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 my-2">
+                      <div>
+                        <label
+                          for="exampleFormControlInputAddres4"
+                          class="form-label"
+                          >Choose reasons for communicating</label
+                        >
+                        <select
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Reasons for communication</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 my-2">
+                      <div>
+                        <label
+                          for="exampleFormControlTextareaAddres1"
+                          class="form-label"
+                          >your letter</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextareaAddres1"
+                          placeholder="Write your message"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-Close-ship-address">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <hr />
+              <div class="py-3">
+                <div class="mb-3">
+                  <h3 class="headline">Geographical location</h3>
+                </div>
+
+                <div class="box-map-Connect-Us">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237684.58518008076!2d40.011363317140905!3d21.43625437343788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b74d3fb493%3A0x55d1f94f8e094785!2z2KfZhNmF2LPYrNivINin2YTYrdix2KfZhQ!5e0!3m2!1sar!2seg!4v1697612632315!5m2!1sar!2seg"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================================================================================================== -->
+
+    
+
+    <!-- ===================================================================================================== -->
+    <!-- footer -->
+    <footer>
+      <div class="container my-5 box-all-footer">
+        
+        <div class="text-center box-Services-slick">
+          <div class="your-Services">
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-duotone fa-rotate-left"></i>
+                </div>
+
+                <div>
+                  <h3>Easy Return</h3>
+                  <p>Easily return the product</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-truck"></i>
+                </div>
+                <div>
+                  <h3>Delivary</h3>
+                  <p>Delivery of all orders of all types</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-duotone fa-percent"></i>
+                </div>
+
+                <div>
+                  <h3>Member Discount</h3>
+                  <p>Continuous discounts with Wazin</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-headset"></i>
+                </div>
+
+                <div>
+                  <h3>Support 24/7</h3>
+                  <p>Customer support 24 hours a day</p>
+                </div>
+              </div>
+            </div>
+            <div class="box-Services">
+              <div class="text-center w-75 m-auto">
+                <div class="box-Services-text">
+                  <i class="fa-light fa-dollar-sign"></i>
+                </div>
+
+                <div>
+                  <h3>Quick Payment</h3>
+                  <p>There is more than one method of payment</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-footer">
+        <div class="layer">
+          <div class="container py-3">
+            <div class="row justify-content-center">
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3">
+                <div>
+                  <div>
+                    <div class="logo-footer">
+                      <img
+                        class="headline-footer"
+                        src="https://shofy-nuxt.vercel.app/img/logo/logo.svg"
+                        alt=""
+                      />
+                    </div>
+
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quas dolorum neque necessitatibus nulla eaque, officiis
+                      tempore reiciendis. Totam cum odit .
+                    </p>
+                  </div>
+
+                  <!-- icon Social Media  -->
+                  <div class="box-icon-footer">
+                    <div class="icon">
+                      <a target="_blank" href="https://facebook.com">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://twitter.com">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 512 512"
+                          class="custom-icon"
+                        >
+                          <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://snapchat.com">
+                        <i class="fa-brands fa-snapchat"></i>
+                      </a>
+                    </div>
+
+                    <div class="icon">
+                      <a target="_blank" href="https://tiktok.com">
+                        <i class="fa-brands fa-tiktok"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://youtube.com">
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="https://linkedin.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a target="_blank" href="tel:20112345566788">
+                        <i class="fa-solid fa-phone"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Master Card visa -->
+                  <div class="">
+                    <div class="box-icon-footer">
+                      <div class="box-Payment">
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/mada.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/visa.png" alt="" />
+                        </div>
+
+                        <div class="box-img-Payment">
+                          <img
+                            src="images/Footer/Payment/MasterCard.png"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/stc.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/7.jpg" alt="" />
+                        </div>
+
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/1.png" alt="" />
+                        </div>
+                        <div class="box-img-Payment">
+                          <img src="images/Footer/Payment/cash.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-3 d-flex justify-content-center"
+              >
+                <div>
+                  <h3 class="headline-footer">My Account</h3>
+                  <div class="box-Informations">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="Blog.html">Blog</a></li>
+                      <li><a href="FAQ'S.html">FAQ'S</a></li>
+                      <li><a href="All-Products.html">All Products</a></li>
+                      <li><a href="Profile.html"> My Account </a></li>
+                      <li><a href="Connect-us.html">Connect-us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 my-3">
+                <div class="my-3">
+                  <div class="box-tax">
+                    <div class="box-tax-img">
+                      <img src="images/Footer/Tax.png" alt="" />
+                    </div>
+                    <div class="box-text-tax">
+                      <p>Al Wasl Point Foundation for Information Technology</p>
+                      <p>Commercial Registry: 4030376574</p>
+                      <p>Tax Number: 310531587200003</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- ccc -->
+                <div class="box-img-business">
+                  <img
+                    src="images/Footer/White-Saudi-Business-Center-190x65w.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Rights-Reserved">
+            <div class="container">
+              <div class="text-center">
+                <!-- Rights Reserved -->
+                <div>
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    Wazin All Rights Reserved
+                  </div>
+                </div>
+
+                <!-- logo wazin -->
+                <div>
+                  <div class="box-logo-wazin-img-text mt-2">
+                    <a href="/" target="_blank">
+                      <div>
+                        <div>Made with love in</div>
+                        <div class="box-logo-wazin-img">
+                          <img
+                            class="w-100 m-auto"
+                            src="images/logo-wazin.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ===================================================================================================== -->
+
+    <!-- ===================================================================================================== -->
+    <!-- js -->
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- the compressed, production -->
+    <script src="js/main-en.js"></script>
+    <!-- <script src="js/main-ar.js"></script> -->
+    <!-- ===================================================================================================== -->
+  </body>
+</html>
